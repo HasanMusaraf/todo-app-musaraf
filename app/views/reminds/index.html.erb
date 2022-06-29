@@ -1,0 +1,37 @@
+
+<h1 class="list-head"> Todo Management</h1>
+
+<div class="form-list">
+
+<%= form_with(url: "/reminds", method: "post") do %>
+
+<div class="task-field">
+<%= text_field_tag "task",nil, placeholder: "Enter Task", required: true %>
+</div>
+
+<div class="date-field">
+<%= date_field_tag "date",nil, required: true %>
+</div>
+
+<div class="submit-field">
+<%= submit_tag "Add Task"%>
+</div>
+
+<%end%>
+
+</div>
+
+<div class="todo-container">
+
+<% @tasks.each do |task|%>
+<div class="each-task">
+   <%= form_with(url: "/mark/#{task.id}", method: "put") do %>
+   <%= check_box_tag "completed", nil, checked = task.completed ? true : false, class: "checkbox", onclick: "this.form.submit()" %>
+   <% end %>
+<p class= <%= (task.completed) ? "TextItem-LineThrough" : "" %>><%="#{task.task}   #{task.date.to_s(:short)}"%></p>
+
+<%= link_to "View Task", task, class: "view-task"%> 
+<%= link_to "Delete Task", task, class: "delete-task", method: :delete, data: { confirm: "Are you sure?"} %>
+</div>
+<%end%>
+</div>

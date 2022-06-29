@@ -1,0 +1,17 @@
+<h1> Edit Task </h1>
+
+<%= form_with model: @task  do |form|%>
+<div>
+<%= form.text_field :task , required: true%>
+</div>
+<div>
+<%= form.date_field :date , required: true %>
+</div>
+<div>
+<%= form.submit "Edit Task" %>
+</div>
+
+<%end%>
+<%= link_to "Previous", remind_url%>
+<%= link_to "Main", reminds_url%>
+

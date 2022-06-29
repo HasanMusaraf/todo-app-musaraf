@@ -1,0 +1,179 @@
+// Place all the styles related to the reminds controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.TextItem-LineThrough{
+    text-decoration: line-through;
+}
+
+
+body{
+    background-color: rgb(234, 120, 110);
+}
+
+.form-list{
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    width: 54.3%;
+    position: relative;
+    left: 370px;
+    top: 90px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px brown;
+
+
+}
+
+.form-list div{
+    display:inline;
+    position: relative;
+    left: 50px;
+    padding-right: 10px;
+}
+
+.task-field input{
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: larger;
+    height: 40px;
+    width: 40%;
+    border-radius: 5px;
+    outline: none;
+}
+
+.date-field input{
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 43px;
+    width: 25%;
+    border-radius: 5px;
+    outline: none;
+}
+
+.submit-field input{
+    height: 40px;
+    width: 10%;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    background-color: rgb(100, 204, 155);
+}
+
+
+.list-head{
+    width: 40%;
+    position: relative;
+    top: 20px;
+    left: 730px;
+    font-family: sans-serif;
+    font-size: 35px;
+}
+
+.todo-container{
+    overflow-y: auto;
+    height: 600px;
+    width: 50%;
+    background-color: rgb(234, 233, 233);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px brown;
+    margin-left: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    position: relative;
+    top: 100px;
+    left: 270px;
+}
+
+.each-task {
+    margin-bottom: 40px;
+    background-color: rgb(100, 204, 155);
+    border-radius: 20px;
+ box-shadow: 2px 2px 2px 2px gray;
+}
+
+.each-task p{
+    position: relative;
+    left: 66px;
+    bottom: 15px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: brown;
+
+}
+
+.checkbox{
+    position: relative;
+    top: 29px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+}
+
+.view-task{
+    text-decoration: none;
+    font-family: sans-serif;
+    border: 2px solid gray;
+    border-radius: 7px;
+    color: white;
+    padding: 3px 3px;
+    background-color: rgb(233, 81, 75);
+    position: relative;
+    bottom: 10px;
+    left: 36px;
+}
+
+.delete-task{
+    text-decoration: none;
+    font-family: sans-serif;
+    border: 2px solid gray;
+    border-radius: 7px;
+    color: white;
+    padding: 3px 3px;
+    background-color: rgb(233, 81, 75);
+    position: relative;
+    bottom: 10px;
+    left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.todo-container::-webkit-scrollbar {
+    width: 1em;
+}
+
+.todo-container::-webkit-scrollbar-track {
+    display: none;
+}
+ 
+.todo-container::-webkit-scrollbar-thumb {
+    display: none;
+}
