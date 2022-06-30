@@ -42,7 +42,7 @@ body{
     width: 40%;
     border-radius: 5px;
     outline: none;
-    background-color:silver;
+    background-color:rgb(237, 225, 225);
 
 }
 
@@ -58,9 +58,9 @@ body{
     border-left: none;
     border-right: none;
     border-bottom: none;
-    background-color:#162d5a;
+    background-color:rgb(237, 225, 225);
     font-weight: 600;
-    color: silver;
+    color: black;
 }
 
 .submit-field input{
@@ -73,9 +73,10 @@ body{
     font-weight: 600;
     outline: none;
     color: black;
-    background-color: #FEEF22;
+    background-color: rgb(244, 243, 249);
     position: relative;
     bottom: 3px;
+    cursor: pointer;
 }
 
 
@@ -166,6 +167,17 @@ body{
 
 }
 
+.view-task:hover{
+    background-color: white;
+    color: #e888fe;
+}
+
+.delete-task:hover{
+    background-color: white;
+    color: rgb(233, 81, 75);
+}
+
+
 .delete-task{
     text-decoration: none;
     font-family: sans-serif;
@@ -219,20 +231,6 @@ body{
 
 // edit button 
 
-.edit{
-    text-decoration: none;
-    font-family: sans-serif;
-    border-radius: 7px;
-    color: white;
-    padding: 10px 10px;
-    background-color: #e888fe;
-    font-weight: 600;
-    box-shadow: 2px 2px 2px 2px black;
-    position: relative;
-    bottom: 51.5px;
-    left:116px ;
-
-}
 
 .edit-form{
     text-decoration: none;
@@ -240,7 +238,7 @@ body{
     border-radius: 7px;
     color: white;
     padding: 10px 10px;
-    background-color: #88f2fe;
+    background-color: #88cbfe;
     font-weight: 600;
     box-shadow: 2px 2px 2px 2px black;
     font-size: 17px;
@@ -290,24 +288,6 @@ body{
     margin-bottom: 20px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .todo-container::-webkit-scrollbar {
