@@ -25,13 +25,15 @@
 
 <% @tasks.each do |task|%>
 <div class="each-task">
+   <%=image_tag("dq.jpg", class: "dq") %>
    <%= form_with(url: "/mark/#{task.id}", method: "put") do %>
    <%= check_box_tag "completed", nil, checked = task.completed ? true : false, class: "checkbox", onclick: "this.form.submit()" %>
    <% end %>
-<p class= <%= (task.completed) ? "TextItem-LineThrough" : "" %>><%="#{task.task}   #{task.date.to_s(:short)}"%></p>
+<p class= <%= (task.completed) ? "TextItem-LineThrough" : "" %>><%=task.task%></p>  <h4 class="msg"><%= task.date.to_s(:short)%></h4>
 
-<%= link_to "View Task", task, class: "view-task"%> 
+<%= link_to "Edit Task", edit_remind_path(task), class: "view-task"%> 
 <%= link_to "Delete Task", task, class: "delete-task", method: :delete, data: { confirm: "Are you sure?"} %>
 </div>
 <%end%>
 </div>
+

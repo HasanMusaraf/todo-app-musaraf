@@ -1,8 +1,8 @@
 <h1> Task Details </h1>
 
 
-<p></strong>Task: </strong><%= @task.task %></p>
-<p></strong>Date: </strong><%= @task.date %></p>
+<p class="show-task"></strong>Task: </strong><%= @task.task %></p>
+<p class="show-task"></strong>Date: </strong><%= @task.date %></p>
 
-<%= link_to "Back", reminds_url%>
-<%= link_to "Edit", edit_remind_path(@task)%>
+<%= link_to "Back", reminds_url, class: "back"%>
+<%= link_to "Edit", edit_remind_path(@task), class:"edit"%>
