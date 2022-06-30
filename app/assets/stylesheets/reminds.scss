@@ -72,8 +72,8 @@ body{
     font-size: 14px;
     font-weight: 600;
     outline: none;
-    color: black;
-    background-color: rgb(244, 243, 249);
+    color: white;
+    background-color: darkgreen;
     position: relative;
     bottom: 3px;
     cursor: pointer;
@@ -167,14 +167,25 @@ body{
 
 }
 
+// button hover
+
 .view-task:hover{
     background-color: white;
+    border: 1px solid #e888fe;
     color: #e888fe;
 }
 
 .delete-task:hover{
     background-color: white;
+    border: 1px solid rgb(233, 81, 75);
     color: rgb(233, 81, 75);
+}
+
+.submit-field input:hover{
+    background-color: white;
+    border: 1px solid darkgreen;
+    color: darkgreen;
+  
 }
 
 
